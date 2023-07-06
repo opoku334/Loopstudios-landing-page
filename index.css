@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'inter';
+    src: url(design/)
+}
+
+
+
+
+
+
+
+
+body{
+    font-size: 15px;
+    font-family: 'Alata';
+}
+
+
+
+.main-section{
+    background-image: url(images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+
+}
+a{
+    color:white !important
+}
+
+h1{
+    font-family: 'Josefin Sans';
+}
+p{
+    font-family: 'Joseph Sans';
+}
+
+.sub-section{
+    
+    margin-top: 20rem;
+    border: 2px solid white;
+    width: 50%;
+    padding: 30px;
+    
+
+}
+.sub-section h1{
+    
+    font-size: 50px;
+}
+
+.ul_items,.icon_items{
+    list-style: none;
+    display: flex;
+    font-size:20px;
+}
+.hamburger_scroll{
+    background-color: hsl(0, 0%, 0%);
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+}
+
+.image_section{
+    position: relative;
+    margin-top: 8rem;
+    height: 580px;
+}
+
+.text_fixed{
+    position: absolute;
+    left: 35rem;
+    top:45%;
+
+    background-color: white;
+    padding: 30px 180px;
+   
+
+}
+
+.button{
+    color:black !important;
+    text-decoration: none;
+    padding: 10px 60px;
+    border:1px solid black;
+    font-size: 16px;
+
+
+}
+.button:hover{
+background-color: black;
+color: white !important;
+}
+.images_container{
+    position: relative;
+}
+
+
+.text_in_image{
+    position: absolute;
+    top:80%;
+    left: 40px;
+    font-size: 15px;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+.grid_container .images_container img{
+    width: 100%;
+}
+footer{
+    background-color: black;
+}
+
+
+
+
+@media screen and (max-width:678px) {
+    .main-section{
+        background-image: url(images/mobile/image-hero.jpg);
+        
+        
+    }
+
+    .image_section{
+        margin-top: 1rem;
+        height: auto;
+    }
+    .sub-section{
+
+        width: 100%;
+        
+    }
+    .sub-section h1{
+        width: 50%;
+        font-size: 30px;
+        
+    }
+    .ul_items{
+        display: block;
+        
+    }
+    .text_fixed{
+        position: static;
+        width: 100%;
+        padding: 0;
+    }
+    .text_in_image{
+
+        top: 50%;
+        font-size: 15px;
+
+    }
+    .button{
+        padding: 5px 70px;
+    }
+    .grid_container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    
+}
+
